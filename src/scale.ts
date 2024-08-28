@@ -21,7 +21,7 @@ export class Scale {
 
   constructor(private readonly page: Page) {}
 
-  public get totalWeighs() {
+  public get totalWeighs(): number {
     return this._totalWeighs;
   }
 
@@ -29,7 +29,7 @@ export class Scale {
     await this.resetButton.click();
   }
 
-  async clickBar(bar: Bar) {
+  async clickBar(bar: Bar): Promise<void> {
     await this.bars.nth(Number(bar)).click();
   }
 
