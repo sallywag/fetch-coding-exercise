@@ -28,6 +28,8 @@ The left and right bowls as well as the weighing results and fake bar are logged
 
 For brevity's sake, I kept the getFakeBar method in the tests/fetch-coding-exercise.spec.ts file. But this could be refactored into another class if desired.
 
+A video will be produced under playwright-report/data after running the test. A video is also available in the html report.
+
 ## Contact
 
 Salvatore Rosa

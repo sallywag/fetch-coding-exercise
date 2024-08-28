@@ -38,7 +38,11 @@ async function getFakeBar(scale: Scale): Promise<Bar | undefined> {
   }
 }
 
-async function addBarsToBowls(leftBowl: Bar[], scale: Scale, rightBowl: Bar[]): Promise<void> {
+async function addBarsToBowls(
+  leftBowl: Bar[],
+  scale: Scale,
+  rightBowl: Bar[],
+): Promise<void> {
   for (const bar of leftBowl) {
     await scale.addBarToBowl(bar, "left");
   }
